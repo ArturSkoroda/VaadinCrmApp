@@ -18,7 +18,7 @@ public class MainLayout extends AppLayout {
     public MainLayout(SecurityService securityService) {
         this.securityService = securityService;
         createHeder();
-    createDrawer();
+        createDrawer();
 
 
     }
@@ -44,7 +44,8 @@ public class MainLayout extends AppLayout {
 
         addToDrawer(new VerticalLayout(
                 listView,
-                new RouterLink("Dashboard", DashboardView.class)
+                new RouterLink("Dashboard", DashboardView.class),
+                new RouterLink("Cośtam",DatePickerBasic.class)
         ));
     }
 
